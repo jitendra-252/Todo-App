@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.outer {
+  height: 100vh;
+  width: 100%;
+  background-color: #181818;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer > .inner {
+  width: 300px;
+
+  background-color: #212121;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.container {
+  margin-top: 8px;
+  max-height: 250px;
+  overflow: auto;
+}
+
+.container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.outer > .inner > header > h1 {
+  margin-bottom: 5px;
+  color: white;
+}
+
+.outer > .inner > header > form > input {
+  width: 70%;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+
+  top: 10px;
+}
+.btn-add {
+  background-color: #8a70da;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container > li {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e2e2e;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  word-wrap: break-word; /* Ensure text wraps */
+}
+
+.container > li > button {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container > li > button.edit-btn {
+  background-color: #4caf50;
+}
+
+.container > li > button:hover {
+  background-color: #c95252;
+}
+
+/* Make sure buttons are aligned consistently */
+.container > li > span {
+  flex-grow: 1;
+  margin-right: 10px;
+}
